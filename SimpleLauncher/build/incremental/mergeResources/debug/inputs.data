@@ -1,0 +1,17 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1375024984000 8917 555edba6a676ac63e19c94130b3e4f9ffcbb788c /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/drawable-xhdpi/ic_launcher.png
+1375024986000 211 4e1904afba59d31e5cd6133f6a4c360fa9a5913f /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values/dimens.xml
+1375024986000 254 25b6404e44acb50c82590049639d4fb5fefbac8e /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values-sw720dp-land/dimens.xml
+1376494047000 720 4b7cf8e6c425fb9742360ee621a611de3b8397c5 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/layout/homescreen.xml
+1376496309000 695 22831ecbd6a8a9a5af99e4debef89c70c2958c92 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values/styles.xml
+1376496192000 361 e870257d73c1fadec342468971f0400dc001a01e /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values-v11/styles.xml
+1375024984000 3810 ad26a4e8f8f1fd467565d59c2a5445b3457e3158 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/drawable-mdpi/ic_launcher.png
+1376496192000 231 50e00d9233a22a1665fc307ddc3541bf81ac53ca /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values-v14/styles.xml
+1376637440000 1516 006fc5ff55aff36e430fd5706600cd5a0361e544 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/layout/list_item_icon_text.xml
+1375024986000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/menu/home_screen.xml
+1375024986000 224 ea38b9aa11a72a809a07aac0d9367cafa222e7c6 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values/strings.xml
+1375024984000 6458 54567e9429b11443c3599794d3a600c0706060c9 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/drawable-hdpi/ic_launcher.png
+1375024984000 14543 3445ed1cb99281ef5132f05d0cdeac22fea806ee /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/drawable-xxhdpi/ic_launcher.png
+1375024986000 181 84de2797380184d8b39af6f829afb092fb956173 /Users/arnab/dev/android/projects/SimpleLauncherProject/SimpleLauncher/src/main/res/values-sw600dp/dimens.xml

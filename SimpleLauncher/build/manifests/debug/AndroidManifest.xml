@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ch.arnab.simplelauncher">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+
+    <!-- Allows to retrieve the list of running applications, as we need them to
+     display the list of applications in our custom launcher -->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+
+    <application android:clearTaskOnLaunch="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:launchMode="singleTask" android:stateNotNeeded="true" android:theme="@style/AppTheme">
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="ch.arnab.simplelauncher.HomeScreen" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+
+                <!-- The following two intent-filters are the key to set homescreen -->
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
