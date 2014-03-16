@@ -3,12 +3,10 @@ package ch.arnab.simplelauncher;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.support.v4.content.AsyncTaskLoader;
 
 import java.text.Collator;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Comparator;
@@ -20,6 +18,7 @@ public class AppsLoader extends AsyncTaskLoader<ArrayList<AppModel>> {
     ArrayList<AppModel> mInstalledApps;
 
     final PackageManager mPm;
+    PackageIntentReceiver mPackageObserver;
 
     public AppsLoader(Context context) {
         super(context);
@@ -92,6 +91,11 @@ public class AppsLoader extends AsyncTaskLoader<ArrayList<AppModel>> {
             deliverResult(mInstalledApps);
         }
 
+        // watch for changes in app install and uninstall operation
+        if (mPackageObserver == null) {
+            mPackageObserver = new PackageIntentReceiver(this);
+        }
+
         if (takeContentChanged() || mInstalledApps == null ) {
             // If the data has changed since the last time it was loaded
             // or is not currently available, start a load.
@@ -124,6 +128,12 @@ public class AppsLoader extends AsyncTaskLoader<ArrayList<AppModel>> {
         if (mInstalledApps != null) {
             onReleaseResources(mInstalledApps);
             mInstalledApps = null;
+        }
+
+        // Stop monitoring for changes.
+        if (mPackageObserver != null) {
+            getContext().unregisterReceiver(mPackageObserver);
+            mPackageObserver = null;
         }
     }
 
